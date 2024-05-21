@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.layout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2d2d2d;
+}
+
+.card {
+    width: 300px;
+    height: 180px;
+    background:
+        linear-gradient(45deg, #31daff 0%, #5BB0FF 100%) no-repeat,
+        linear-gradient(135deg, #61ECFF80 0%, #89E3FF80 100%) no-repeat,
+        linear-gradient(0deg, #a307ce80 0%, #5a019a80 100%) no-repeat,
+        linear-gradient(270deg, #dadada7a 0%, #ffffff1f 100%) no-repeat;
+    background-size: cover, cover;
+    background-blend-mode: overlay;
+    border-radius: 20px;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.card2 {
+    width: 300px;
+    height: 180px;
+    background:
+        linear-gradient(45deg, #8e31ff 0%, #0e579a 100%) no-repeat,
+        linear-gradient(135deg, #617bff80 0%, #89E3FF80 100%) no-repeat,
+        linear-gradient(0deg, #a307ce80 0%, #5a019a80 100%) no-repeat,
+        linear-gradient(270deg, #dadada7a 0%, #ffffff1f 100%) no-repeat;
+    background-size: cover, cover;
+    background-blend-mode: overlay;
+    border-radius: 20px;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.card3 {
+    width: 300px;
+    height: 180px;
+    background:
+        linear-gradient(45deg, #ff3131 0%, #9a0e0e 100%) no-repeat,
+        linear-gradient(135deg, #ff616167 0%, #89E3FF80 100%) no-repeat,
+        linear-gradient(0deg, #a307ce80 0%, #5a019a80 100%) no-repeat,
+        linear-gradient(270deg, #dadada4c 0%, #ffffff09 100%) no-repeat;
+    background-size: cover, cover;
+    background-blend-mode: overlay;
+    border-radius: 20px;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.card4 {
+    width: 300px;
+    height: 180px;
+    background:
+        linear-gradient(45deg, #31ff3f 0%, #0e9a3d 100%) no-repeat,
+        linear-gradient(135deg, #61ff8e67 0%, #89E3FF80 100%) no-repeat,
+        linear-gradient(0deg, #a307ce80 0%, #5a019a80 100%) no-repeat,
+        linear-gradient(270deg, #dadada4c 0%, #ffffff09 100%) no-repeat;
+    background-size: cover, cover;
+    background-blend-mode: overlay;
+    border-radius: 20px;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+    transform: scale(1.05);
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card__bottom {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.303);
+    height: 50px;
+    width: 100%;
+    border-top: solid 1px white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.561);
+}
